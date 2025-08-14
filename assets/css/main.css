@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.log-in{
+    height: 100vh;
+    background-image: url(../img/360_F_292905667_yFUJNJPngYeRNlrRL4hApHWxuYyRY4kN.jpg);
+    background-size: cover;
+}
+
+.log-in .layout{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 15 165 / 25%)
+}
+
+.log-in .container{
+    max-width: 1400px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.log-in .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.log-in .log{
+    width: 35%;
+    padding: 20px;
+    margin-top: 160px;
+    border-radius: 18px;
+    text-align: center;
+    background-color: rgb(162 167 196 / 25%);
+    border: 1px solid #a0a5cc;
+    transition: all 0.5s ease-in-out;
+}
+
+.log-in .log:hover{
+    box-shadow: 0 4px 20px rgba(37, 41, 81, 0.4);
+}
+
+.log-in .log h1{
+    color: #425282;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 45px;
+}
+
+.log-in .log .my-form{
+    position: relative;
+}
+
+.log-in .log .my-form label{
+    color: #425282;
+    box-shadow: 0 0 0 0.5;
+    position: absolute;
+    left: 15px;
+}
+
+.log-in .log .my-form input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid #d0d5dd;
+}
+
+.log-in .log .my-form input:focus{
+    outline: none;
+    border-color: #425282;
+    box-shadow: 0 0 0 3px rgba(66, 82, 130, .18);
+}
+
+.log-in .log .my-form button{
+    color: whitesmoke;
+    width: 50%;
+    margin: 15px;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #a1a7d8;
+    transition: all .7s;
+}
+
+.log-in .log .my-form button:hover{
+    color: black;
+    background-image: linear-gradient(to right ,#425282 , whitesmoke);
+}
+
+.log-in .log .my-form a{
+    text-decoration: none;
+    color: #425282;
+}
+
+.log-in .log .my-form a:hover{
+    text-decoration: underline;
+}
+
+/* XL */
+@media (max-width:1250px){
+    .log-in .row{
+        justify-content: space-evenly;
+}
+    .log-in .log{
+        margin-top: 100px;
+}
+}
+
+/* LG */
+@media (max-width:960px){
+    .log-in .log h1{
+        color: white;
+}
+    .log-in .log .my-form label{
+        color: white;
+}
+    .log-in .log .my-form a{
+        color: white;
+    }
+}
+
+/* M */
+@media (max-width:760px){
+    .log-in .log h1{
+        font-size: 35px;
+    }
+}
