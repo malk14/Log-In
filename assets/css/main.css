@@ -102,6 +102,16 @@
     text-decoration: underline;
 }
 
+.log-in .footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.log-in .footer span{
+    color: rgb(227, 219, 219);
+    font-size: 15px;
+}
+
 /* XL */
 @media (max-width:1250px){
     .log-in .row{
@@ -127,7 +137,20 @@
 
 /* M */
 @media (max-width:760px){
+    .log-in .log{
+        width: 40%;
+    }
     .log-in .log h1{
         font-size: 35px;
+    }
+}
+
+/* SM */
+@media (max-width:545px){
+    .log-in .log{
+        width: 45%;
+    }
+    .log-in .log h1{
+        font-size: 30px;
     }
 }
